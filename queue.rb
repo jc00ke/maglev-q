@@ -1,3 +1,4 @@
+Maglev.abort_transaction
 
 Maglev::PERSISTENT_ROOT[:q] = []
 
