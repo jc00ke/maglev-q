@@ -6,7 +6,7 @@ while work do
     Maglev.commit_transaction
     work.call if work
   rescue Maglev::CommitFailedException
-    puts "job failed :-( REDO!"
+    puts "Dang, someone hijacked my job... gonna grab another."
     redo
   end
 end
