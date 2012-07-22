@@ -11,7 +11,7 @@ keep_looping = true
 trap(:INT) { keep_looping = false }
 
 while keep_looping do
-  Maglev::PERSISTENT_ROOT[:q] << Proc.new { puts "doing work #{Time.now.to_i}" }
+  Maglev::PERSISTENT_ROOT[:q] << Proc.new { puts "doing work #{Time.now.to_f}" }
   Maglev.commit_transaction
   sleep 0.5
   print "."
