@@ -16,7 +16,7 @@ while keep_looping do
     else
       print "."
     end
-    sleep 1
+    sleep 0.3
   rescue Maglev::CommitFailedException
     puts "Dang, someone hijacked my job... gonna grab another."
     redo
