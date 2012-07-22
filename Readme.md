@@ -6,7 +6,7 @@ The following code assumes you're using [RVM](https://rvm.beginrescueend.com)
 
 Open up 3 terminals (all using Maglev) and in the first run:
 
-    ruby queue.rb
+    ruby producer.rb
 
 And in the other 2 run:
 
