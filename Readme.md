@@ -2,7 +2,7 @@ A *very* simple implementation of a background queue/worker.
 The cool part: we're calling a proc. Since Maglev deals with real objects we can actually persist
 a proc, which you can't do in other implementations because you can't marshal a proc.
 
-Open up 3 terminals (all using Maglev) and in the first run:
+Open up 3 terminals. In the first run:
 
     ./producer.rb
 
